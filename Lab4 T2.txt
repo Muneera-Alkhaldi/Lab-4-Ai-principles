@@ -1,0 +1,33 @@
+21 ?- female(X).
+X = sara ;
+X = nora.
+ Explanation: X represents each person who is female.
+
+
+22 ?- male(X).
+X = ali ;
+X = ahmad ;
+X = muhammad ;
+X = faisal ;
+X = hassan ;
+X = khan.
+ Explanation: X represents each person who is male.
+
+23 ?- parent(X, Y), parent(Y, faisal).
+X = ali,
+Y = muhammad ;
+ Explanation: X is the grandparent of Faisal through Y.
+
+
+24 ?-  parent(ahmad, X), female(X).
+X = sara ;
+X = nora ;
+ Explanation: X is a female child of Ahmad.
+
+25 ?- 
+  parent(X, ahmad), parent(X, muhammad).
+X = ali.
+ Explanation: X is the common parent of Ahmad and Muhammad.
+26 ?- parent(X, khan), parent(X, nora), male(khan).
+X = ahmad.
+Explanation: X is the parent of both Khan and Nora, and Khan is male.
